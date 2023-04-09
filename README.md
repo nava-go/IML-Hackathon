@@ -1,6 +1,8 @@
-# IML-Hackathon
-Given real (anonymized) data of breast cancer patients treated in Israel over the last years, we tried predict metastases sites and to estimate the diagnosed tumor size. Done as part of IML-Hackathon in course 67577 (IML).
-Team members: Ilana Gelmanm, Lee Oziel, Gal Rubinshtein ,Nava Goetschel
+# IML Hackathon
+Given real data of breast cancer patients treated in Israel over the last years, we tried predict metastases sites and to estimate the diagnosed tumor size. 
+Done as part of IML-Hackathon in course 67577 (IML).
+
+## Team members: Ilana Gelmanm, Lee Oziel, Gal Rubinshtein ,Nava Goetschel
 
 ## Motivation
 Breast cancer is one of the most pervasive malignant diseases among women in the world and in
@@ -16,11 +18,13 @@ patient visit) with 34 features. The first row describes feature names.
 * test.feats.csv: 16,447 records in a csv file, each containing a single instance (single patient
 visit) with 34 features. The first row describes feature names.
 note: The repository does not contain the data, due to the sensitivity of the information.
+![correlation between features](./results/heatmap.png)
+
 
 ## Part 1 - Predicting Metastases
-Goal: Given each visit characteristics, predict metastases sites (multi-label, multi-class categories).
 
-### Process:
+### Goal: 
+Given each visit characteristics, predict metastases sites (multi-label, multi-class categories).
 
 ### Evaluation:
 done by using:
@@ -29,16 +33,20 @@ done by using:
 (script evaluate_part_0.py)
 
 ### Results:
+As we can see, the model that get the minimun score is Random Forest with k=200.
+![comparing models](./results/part1_compare_models.jpg)
 
 ## Part 2 - Predicting Tumor Size
-Goal: Given each visit characteristics, predict the diagnosed tumor size (in mm).
 
-### Process:
+### Goal: 
+Given each visit characteristics, predict the diagnosed tumor size (in mm).
 
 ### Evaluation:
 done by using mean squared error
 (script evaluate_part_1.py)
 
 ### Results:
+As demonstrated, the model that get the minimun MSE is Linear Regression.
+![comparing models](./results/part2_compare_models.jpg)
 
-## Summary
+
