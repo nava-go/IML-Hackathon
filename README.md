@@ -18,7 +18,7 @@ patient visit) with 34 features. The first row describes feature names.
 * test.feats.csv: 16,447 records in a csv file, each containing a single instance (single patient
 visit) with 34 features. The first row describes feature names.
 note: The repository does not contain the data, due to the sensitivity of the information.
-![correlation between features](./results/heatmap.png)
+![correlation between features](./results/heatmap.jpg)
 
 
 ## Part 1 - Predicting Metastases
